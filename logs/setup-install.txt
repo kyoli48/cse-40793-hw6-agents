@@ -1,0 +1,6 @@
+Command: .venv/bin/python -m pip install --disable-pip-version-check --retries 0 --timeout 5 -r partner_agent/requirements.txt
+Exit: 1
+WARNING: pip cache location was not writable; cache disabled.
+ERROR: Could not find a version that satisfies the requirement ollama<1,>=0.6 (from versions: none)
+ERROR: No matching distribution found for ollama<1,>=0.6
+No dependency was installed. This result does not establish that the package/version is unavailable on public PyPI; this environment could not resolve/install it.

@@ -1,0 +1,133 @@
+<!doctype html><meta charset="utf-8"><title>Style review</title><h1>Style review</h1><pre>{
+  &quot;agent&quot;: &quot;style-enforcer&quot;,
+  &quot;mode&quot;: &quot;deterministic&quot;,
+  &quot;model&quot;: null,
+  &quot;status&quot;: &quot;FAIL&quot;,
+  &quot;files&quot;: [
+    {
+      &quot;file&quot;: &quot;domain/discounts.py&quot;,
+      &quot;sha256&quot;: &quot;df683e7895fb98f3dc999fe68b3f30e2f5d0765a540a2011a7984eaf7cd34f90&quot;,
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;findings&quot;: [],
+      &quot;usage&quot;: [],
+      &quot;annotated_lines&quot;: [
+        {
+          &quot;line&quot;: 1,
+          &quot;code&quot;: &quot;def discounted_price(price, rate):&quot;,
+          &quot;comments&quot;: []
+        },
+        {
+          &quot;line&quot;: 2,
+          &quot;code&quot;: &quot;    \&quot;\&quot;\&quot;Calculate a discounted total.\&quot;\&quot;\&quot;&quot;,
+          &quot;comments&quot;: []
+        },
+        {
+          &quot;line&quot;: 3,
+          &quot;code&quot;: &quot;    return price * (1 - rate)&quot;,
+          &quot;comments&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;file&quot;: &quot;domain/pricing.py&quot;,
+      &quot;sha256&quot;: &quot;3ab520b63a68f5e2b77d12bd31a79947948b792a9c6301b8fe6511b40ced90f9&quot;,
+      &quot;status&quot;: &quot;FAIL&quot;,
+      &quot;findings&quot;: [
+        {
+          &quot;rule_id&quot;: &quot;S003&quot;,
+          &quot;line&quot;: 1,
+          &quot;evidence&quot;: &quot;def calculateTotal(price, quantity):&quot;,
+          &quot;message&quot;: &quot;Function name is not snake_case&quot;,
+          &quot;suggestion&quot;: &quot;Rename using snake_case.&quot;,
+          &quot;origin&quot;: &quot;deterministic&quot;
+        },
+        {
+          &quot;rule_id&quot;: &quot;S004&quot;,
+          &quot;line&quot;: 1,
+          &quot;evidence&quot;: &quot;def calculateTotal(price, quantity):&quot;,
+          &quot;message&quot;: &quot;Public function lacks a docstring&quot;,
+          &quot;suggestion&quot;: &quot;Document its purpose and units.&quot;,
+          &quot;origin&quot;: &quot;deterministic&quot;
+        }
+      ],
+      &quot;usage&quot;: [],
+      &quot;annotated_lines&quot;: [
+        {
+          &quot;line&quot;: 1,
+          &quot;code&quot;: &quot;def calculateTotal(price, quantity):&quot;,
+          &quot;comments&quot;: [
+            {
+              &quot;rule_id&quot;: &quot;S003&quot;,
+              &quot;line&quot;: 1,
+              &quot;evidence&quot;: &quot;def calculateTotal(price, quantity):&quot;,
+              &quot;message&quot;: &quot;Function name is not snake_case&quot;,
+              &quot;suggestion&quot;: &quot;Rename using snake_case.&quot;,
+              &quot;origin&quot;: &quot;deterministic&quot;
+            },
+            {
+              &quot;rule_id&quot;: &quot;S004&quot;,
+              &quot;line&quot;: 1,
+              &quot;evidence&quot;: &quot;def calculateTotal(price, quantity):&quot;,
+              &quot;message&quot;: &quot;Public function lacks a docstring&quot;,
+              &quot;suggestion&quot;: &quot;Document its purpose and units.&quot;,
+              &quot;origin&quot;: &quot;deterministic&quot;
+            }
+          ]
+        },
+        {
+          &quot;line&quot;: 2,
+          &quot;code&quot;: &quot;    print(\&quot;calculating price\&quot;)&quot;,
+          &quot;comments&quot;: []
+        },
+        {
+          &quot;line&quot;: 3,
+          &quot;code&quot;: &quot;    return price * quantity&quot;,
+          &quot;comments&quot;: []
+        }
+      ]
+    },
+    {
+      &quot;file&quot;: &quot;ui/display.py&quot;,
+      &quot;sha256&quot;: &quot;e0623940c7bb903a2c7e661821ecf8e08e046910010eb7b3bc04df60cb195aa2&quot;,
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;findings&quot;: [],
+      &quot;usage&quot;: [],
+      &quot;annotated_lines&quot;: [
+        {
+          &quot;line&quot;: 1,
+          &quot;code&quot;: &quot;from domain.pricing import calculateTotal&quot;,
+          &quot;comments&quot;: []
+        },
+        {
+          &quot;line&quot;: 2,
+          &quot;code&quot;: &quot;&quot;,
+          &quot;comments&quot;: []
+        },
+        {
+          &quot;line&quot;: 3,
+          &quot;code&quot;: &quot;&quot;,
+          &quot;comments&quot;: []
+        },
+        {
+          &quot;line&quot;: 4,
+          &quot;code&quot;: &quot;def show_price(price, quantity):&quot;,
+          &quot;comments&quot;: []
+        },
+        {
+          &quot;line&quot;: 5,
+          &quot;code&quot;: &quot;    \&quot;\&quot;\&quot;Display a total; price is in dollars and the displayed total is in dollars.\&quot;\&quot;\&quot;&quot;,
+          &quot;comments&quot;: []
+        },
+        {
+          &quot;line&quot;: 6,
+          &quot;code&quot;: &quot;    print(calculateTotal(price, quantity))&quot;,
+          &quot;comments&quot;: []
+        }
+      ]
+    }
+  ],
+  &quot;total_files&quot;: 3,
+  &quot;reviewed_files&quot;: 3,
+  &quot;rules_sha256&quot;: &quot;761d2178537640a933038c93a5bca37c3b7ad4d7d27322a4708221849848acbf&quot;,
+  &quot;seconds&quot;: 0.005
+}</pre>

@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.pyc
+# Course handout stays local; the repo includes our implementation and instructions.
+Homework 06_ Making Agents from template - Group.docx

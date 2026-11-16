@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/partner_agent/run_agent.py", line 11, in <module>
+    from ollama import ResponseError, chat
+ModuleNotFoundError: No module named 'ollama'

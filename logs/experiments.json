@@ -1,0 +1,234 @@
+[
+  {
+    "agent": "style_deterministic",
+    "scenario": "baseline",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/run_agent.py",
+      "--target",
+      "/var/folders/qh/fhdgycwd0w54lklk7338xddh0000gn/T/hw6-db98nzyr/test_repo",
+      "--mode",
+      "deterministic",
+      "--log-file",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_deterministic_baseline.jsonl",
+      "--html",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_deterministic_baseline.html"
+    ],
+    "exit_code": 1,
+    "seconds": 0.071,
+    "target_unchanged": true,
+    "input_hashes": {
+      "ARCHITECTURE.md": "f20a5e7465e412799609220335f358de7fe279c42ee2d096e82be544457316c3",
+      "RULES.md": "761d2178537640a933038c93a5bca37c3b7ad4d7d27322a4708221849848acbf",
+      "ui/display.py": "e0623940c7bb903a2c7e661821ecf8e08e046910010eb7b3bc04df60cb195aa2",
+      "domain/discounts.py": "df683e7895fb98f3dc999fe68b3f30e2f5d0765a540a2011a7984eaf7cd34f90",
+      "domain/pricing.py": "3ab520b63a68f5e2b77d12bd31a79947948b792a9c6301b8fe6511b40ced90f9"
+    }
+  },
+  {
+    "agent": "style_llm",
+    "scenario": "baseline",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/run_agent.py",
+      "--target",
+      "/var/folders/qh/fhdgycwd0w54lklk7338xddh0000gn/T/hw6-db98nzyr/test_repo",
+      "--mode",
+      "llm",
+      "--log-file",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_llm_baseline.jsonl",
+      "--html",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_llm_baseline.html"
+    ],
+    "exit_code": 2,
+    "seconds": 0.065,
+    "target_unchanged": true,
+    "input_hashes": {
+      "ARCHITECTURE.md": "f20a5e7465e412799609220335f358de7fe279c42ee2d096e82be544457316c3",
+      "RULES.md": "761d2178537640a933038c93a5bca37c3b7ad4d7d27322a4708221849848acbf",
+      "ui/display.py": "e0623940c7bb903a2c7e661821ecf8e08e046910010eb7b3bc04df60cb195aa2",
+      "domain/discounts.py": "df683e7895fb98f3dc999fe68b3f30e2f5d0765a540a2011a7984eaf7cd34f90",
+      "domain/pricing.py": "3ab520b63a68f5e2b77d12bd31a79947948b792a9c6301b8fe6511b40ced90f9"
+    }
+  },
+  {
+    "agent": "partner",
+    "scenario": "baseline",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/partner_agent/run_agent.py",
+      "--target",
+      "/var/folders/qh/fhdgycwd0w54lklk7338xddh0000gn/T/hw6-db98nzyr/test_repo",
+      "--baseline",
+      "--log-file",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/partner_baseline.jsonl"
+    ],
+    "exit_code": 1,
+    "seconds": 0.04,
+    "target_unchanged": true,
+    "input_hashes": {
+      "ARCHITECTURE.md": "f20a5e7465e412799609220335f358de7fe279c42ee2d096e82be544457316c3",
+      "RULES.md": "761d2178537640a933038c93a5bca37c3b7ad4d7d27322a4708221849848acbf",
+      "ui/display.py": "e0623940c7bb903a2c7e661821ecf8e08e046910010eb7b3bc04df60cb195aa2",
+      "domain/discounts.py": "df683e7895fb98f3dc999fe68b3f30e2f5d0765a540a2011a7984eaf7cd34f90",
+      "domain/pricing.py": "3ab520b63a68f5e2b77d12bd31a79947948b792a9c6301b8fe6511b40ced90f9"
+    }
+  },
+  {
+    "agent": "style_deterministic",
+    "scenario": "iterative",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/run_agent.py",
+      "--target",
+      "/var/folders/qh/fhdgycwd0w54lklk7338xddh0000gn/T/hw6-db98nzyr/test_repo",
+      "--mode",
+      "deterministic",
+      "--log-file",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_deterministic_iterative.jsonl",
+      "--html",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_deterministic_iterative.html"
+    ],
+    "exit_code": 1,
+    "seconds": 0.068,
+    "target_unchanged": true,
+    "input_hashes": {
+      "ARCHITECTURE.md": "f20a5e7465e412799609220335f358de7fe279c42ee2d096e82be544457316c3",
+      "RULES.md": "761d2178537640a933038c93a5bca37c3b7ad4d7d27322a4708221849848acbf",
+      "ui/display.py": "e0623940c7bb903a2c7e661821ecf8e08e046910010eb7b3bc04df60cb195aa2",
+      "domain/discounts.py": "df683e7895fb98f3dc999fe68b3f30e2f5d0765a540a2011a7984eaf7cd34f90",
+      "domain/pricing.py": "3ab520b63a68f5e2b77d12bd31a79947948b792a9c6301b8fe6511b40ced90f9"
+    }
+  },
+  {
+    "agent": "style_llm",
+    "scenario": "iterative",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/run_agent.py",
+      "--target",
+      "/var/folders/qh/fhdgycwd0w54lklk7338xddh0000gn/T/hw6-db98nzyr/test_repo",
+      "--mode",
+      "llm",
+      "--log-file",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_llm_iterative.jsonl",
+      "--html",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_llm_iterative.html"
+    ],
+    "exit_code": 2,
+    "seconds": 0.07,
+    "target_unchanged": true,
+    "input_hashes": {
+      "ARCHITECTURE.md": "f20a5e7465e412799609220335f358de7fe279c42ee2d096e82be544457316c3",
+      "RULES.md": "761d2178537640a933038c93a5bca37c3b7ad4d7d27322a4708221849848acbf",
+      "ui/display.py": "e0623940c7bb903a2c7e661821ecf8e08e046910010eb7b3bc04df60cb195aa2",
+      "domain/discounts.py": "df683e7895fb98f3dc999fe68b3f30e2f5d0765a540a2011a7984eaf7cd34f90",
+      "domain/pricing.py": "3ab520b63a68f5e2b77d12bd31a79947948b792a9c6301b8fe6511b40ced90f9"
+    }
+  },
+  {
+    "agent": "partner",
+    "scenario": "iterative",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/partner_agent/run_agent.py",
+      "--target",
+      "/var/folders/qh/fhdgycwd0w54lklk7338xddh0000gn/T/hw6-db98nzyr/test_repo",
+      "--baseline",
+      "--log-file",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/partner_iterative.jsonl"
+    ],
+    "exit_code": 1,
+    "seconds": 0.038,
+    "target_unchanged": true,
+    "input_hashes": {
+      "ARCHITECTURE.md": "f20a5e7465e412799609220335f358de7fe279c42ee2d096e82be544457316c3",
+      "RULES.md": "761d2178537640a933038c93a5bca37c3b7ad4d7d27322a4708221849848acbf",
+      "ui/display.py": "e0623940c7bb903a2c7e661821ecf8e08e046910010eb7b3bc04df60cb195aa2",
+      "domain/discounts.py": "df683e7895fb98f3dc999fe68b3f30e2f5d0765a540a2011a7984eaf7cd34f90",
+      "domain/pricing.py": "3ab520b63a68f5e2b77d12bd31a79947948b792a9c6301b8fe6511b40ced90f9"
+    }
+  },
+  {
+    "agent": "style_deterministic",
+    "scenario": "adversarial",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/run_agent.py",
+      "--target",
+      "/var/folders/qh/fhdgycwd0w54lklk7338xddh0000gn/T/hw6-db98nzyr/test_repo",
+      "--mode",
+      "deterministic",
+      "--log-file",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_deterministic_adversarial.jsonl",
+      "--html",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_deterministic_adversarial.html",
+      "--max-steps",
+      "1"
+    ],
+    "exit_code": 3,
+    "seconds": 0.086,
+    "target_unchanged": true,
+    "input_hashes": {
+      "ARCHITECTURE.md": "f20a5e7465e412799609220335f358de7fe279c42ee2d096e82be544457316c3",
+      "RULES.md": "761d2178537640a933038c93a5bca37c3b7ad4d7d27322a4708221849848acbf",
+      "ui/display.py": "e0623940c7bb903a2c7e661821ecf8e08e046910010eb7b3bc04df60cb195aa2",
+      "domain/discounts.py": "df683e7895fb98f3dc999fe68b3f30e2f5d0765a540a2011a7984eaf7cd34f90",
+      "domain/decoy.py": "efa7dbfb9facaa2348fe427cc9ef0be5ce0f45c5e1be0fa61426bd19db7984e0",
+      "domain/pricing.py": "3ab520b63a68f5e2b77d12bd31a79947948b792a9c6301b8fe6511b40ced90f9"
+    }
+  },
+  {
+    "agent": "style_llm",
+    "scenario": "adversarial",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/run_agent.py",
+      "--target",
+      "/var/folders/qh/fhdgycwd0w54lklk7338xddh0000gn/T/hw6-db98nzyr/test_repo",
+      "--mode",
+      "llm",
+      "--log-file",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_llm_adversarial.jsonl",
+      "--html",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/style_llm_adversarial.html",
+      "--max-steps",
+      "1"
+    ],
+    "exit_code": 3,
+    "seconds": 0.067,
+    "target_unchanged": true,
+    "input_hashes": {
+      "ARCHITECTURE.md": "f20a5e7465e412799609220335f358de7fe279c42ee2d096e82be544457316c3",
+      "RULES.md": "761d2178537640a933038c93a5bca37c3b7ad4d7d27322a4708221849848acbf",
+      "ui/display.py": "e0623940c7bb903a2c7e661821ecf8e08e046910010eb7b3bc04df60cb195aa2",
+      "domain/discounts.py": "df683e7895fb98f3dc999fe68b3f30e2f5d0765a540a2011a7984eaf7cd34f90",
+      "domain/decoy.py": "efa7dbfb9facaa2348fe427cc9ef0be5ce0f45c5e1be0fa61426bd19db7984e0",
+      "domain/pricing.py": "3ab520b63a68f5e2b77d12bd31a79947948b792a9c6301b8fe6511b40ced90f9"
+    }
+  },
+  {
+    "agent": "partner",
+    "scenario": "adversarial",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/partner_agent/run_agent.py",
+      "--target",
+      "/var/folders/qh/fhdgycwd0w54lklk7338xddh0000gn/T/hw6-db98nzyr/test_repo",
+      "--baseline",
+      "--log-file",
+      "/Users/akbh/Documents/classes/CSE 40793 AI-Aided Modern Software Development/HW6 Create Agents/logs/partner_adversarial.jsonl"
+    ],
+    "exit_code": 1,
+    "seconds": 0.035,
+    "target_unchanged": true,
+    "input_hashes": {
+      "ARCHITECTURE.md": "f20a5e7465e412799609220335f358de7fe279c42ee2d096e82be544457316c3",
+      "RULES.md": "761d2178537640a933038c93a5bca37c3b7ad4d7d27322a4708221849848acbf",
+      "ui/display.py": "e0623940c7bb903a2c7e661821ecf8e08e046910010eb7b3bc04df60cb195aa2",
+      "domain/discounts.py": "df683e7895fb98f3dc999fe68b3f30e2f5d0765a540a2011a7984eaf7cd34f90",
+      "domain/decoy.py": "efa7dbfb9facaa2348fe427cc9ef0be5ce0f45c5e1be0fa61426bd19db7984e0",
+      "domain/pricing.py": "3ab520b63a68f5e2b77d12bd31a79947948b792a9c6301b8fe6511b40ced90f9"
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "agent": "style-enforcer",
+  "mode": "llm",
+  "model": "gemini-2.5-flash",
+  "status": "INCOMPLETE",
+  "files": [
+    {
+      "file": "domain/decoy.py",
+      "sha256": "efa7dbfb9facaa2348fe427cc9ef0be5ce0f45c5e1be0fa61426bd19db7984e0",
+      "status": "INCOMPLETE",
+      "error": "File exceeds --max-bytes",
+      "findings": []
+    }
+  ],
+  "total_files": 4,
+  "reviewed_files": 1,
+  "rules_sha256": "761d2178537640a933038c93a5bca37c3b7ad4d7d27322a4708221849848acbf",
+  "seconds": 0.001
+}
