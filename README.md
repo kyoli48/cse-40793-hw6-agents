@@ -12,6 +12,37 @@ See docs/PARTS_1_TO_3.md for the evidence and exact limitations.
 
 Python 3.10+, no Python packages required for this agent.
 
+### Local Qwen through Ollama
+
+Install [Ollama](https://ollama.com/download), open the app (or run `ollama serve`
+in another terminal), then download a Qwen model and run:
+
+```sh
+ollama pull qwen3:4b
+python3 run_agent.py --target ./test_repo --provider ollama --model qwen3:4b --log-file logs/qwen_baseline.jsonl --html logs/qwen_baseline.html
+```
+
+No API key or Python Ollama SDK is needed for the style agent. Both its reviewer
+and judge use the selected local model through Ollama's
+[/api/chat endpoint](https://docs.ollama.com/api/chat). Ollama defaults to one
+file worker to avoid concurrent model requests on a local machine; override
+with --workers. Responses use JSON mode and record actual token counts when
+returned. A model download needs internet; inference uses localhost.
+This is a provider setup change; Part 4 robustness work remains deferred.
+
+To run both agents using the same local model and preserve initial logs:
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r partner_agent/requirements.txt
+.venv/bin/python scripts/run_experiments.py --provider ollama --style-model qwen3:4b --partner-model qwen3:4b --log-dir logs/qwen_runs
+```
+
+The partner agent still needs its Python Ollama dependency. These commands
+require a running local service and the model already downloaded.
+
+### Gemini or deterministic checks
+
 ```sh
 python3 run_agent.py --target ./test_repo --mode deterministic --log-file logs/manual.jsonl --html logs/manual.html
 export GEMINI_API_KEY='your-key-set-locally'
@@ -20,7 +51,7 @@ python3 run_agent.py --target ./test_repo --model gemini-2.5-flash --log-file lo
 
 Default mode is `llm`: deterministic checks plus Gemini review per file, with a
 second Gemini judge call when semantic findings are proposed. Four worker
-threads by default. `--max-steps` bounds files, `--max-bytes` bounds each file,
+threads by default for Gemini (one for Ollama). `--max-steps` bounds files, `--max-bytes` bounds each file,
 `--max-tokens` bounds output per call. These are practical implementation
 budgets; the template's million-token figure is not an output budget.
 Gemini receives source code and RULES.md; use a testbed or code you may send.

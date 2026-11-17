@@ -13,8 +13,11 @@
    Initial implementation has AST/line checks, rule/line/evidence validation,
    a second LLM judge for proposed semantic comments and explicit incomplete
    status. Source has no write tools, but Python itself is not sandboxed.
-7. Model: Gemini Flash (configurable, default gemini-2.5-flash). Max output
-   4096 tokens/call, at most two calls/file, four concurrent files by default.
+7. Model: Gemini Flash (default gemini-2.5-flash) or local Ollama/Qwen
+   via --provider ollama --model qwen3:4b. Max output
+   4096 tokens/call, at most two calls/file, four concurrent files by default
+   for Gemini and one for Ollama. Local Ollama uses the HTTP API without a
+   Python SDK or API key.
    Template's 1M figure described desired context capacity, not output.
    Dollar cost unknown until current pricing and actual usage are available;
    the original $0.75 estimate is not treated as a verified cost.

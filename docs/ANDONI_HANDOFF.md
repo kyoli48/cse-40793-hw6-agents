@@ -7,6 +7,16 @@ of those failures, not completed model evaluations.
 
 ## Setup
 
+Local model alternative (no Gemini key needed): install and start Ollama, then
+run `ollama pull qwen3:4b`. Add `--provider ollama --model qwen3:4b` to each style
+command below. To execute the entire harness using local models:
+
+```sh
+python scripts/run_experiments.py --provider ollama --style-model qwen3:4b --partner-model qwen3:4b --log-dir logs/qwen_runs
+```
+
+Your architecture agent still requires the Python Ollama SDK installed below.
+
 Clone this repository and enter its root. Use Python 3.10 or newer.
 The style agent itself needs no Python dependencies.
 
